@@ -7,9 +7,12 @@ import Discord from "./Discord";
 function Bio() {
   return (
     <div className="h-screen w-full justify-center lg:py-9">
-      <div className="flex justify-center ">
+      <div className="flex justify-center mt-1 ">
         <h1 className="font-Nunito  text-[25px] mt-1 font-thin tracking-tighter cursor-pointer ">
-          <span className="">Olabinjó Múýiwá </span>| Frontend Space
+          <span className="hover:animate-pulse 1s">Olabinjó Múýiwá </span>|{" "}
+          <a href="https://pt-3-0.vercel.app/" target="_blank" rel="noreferrer">
+            Frontend Space
+          </a>
         </h1>
       </div>
       <div className="flex-column justify-center mt-60  py-4 lg:mt-65 lg:py-16">
@@ -25,18 +28,29 @@ function Bio() {
         </div>
         <div className="flex justify-center gap-5 cursor-pointer">
           <div>
-            {/* <Link to="linkedin.com/in/muyiwa-olabinjo-01a657228/"> */}
-            <Linkedin />
-            {/* </Link> */}
+            <a
+              href="https://www.linkedin.com/in/muyiwa-olabinjo-01a657228/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Linkedin />
+            </a>
           </div>
           <div>
-            <Github />
+            <a
+              href="https://github.com/olaa234"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Github />
+            </a>
           </div>
           <div>
             <Discord />
           </div>
         </div>
       </div>
+      <div className="flex justify-center mt-60 text-base">©️ 2023</div>
     </div>
   );
 }
