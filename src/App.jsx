@@ -1,8 +1,16 @@
 import "./App.css";
 import Bio from "./components/Bio";
+import { Helmet } from "react-helmet";
 
 function App() {
-  return <Bio />;
+  return (
+    <>
+      <Helmet>
+        <title>Múýiwá</title>
+      </Helmet>
+      <Bio />
+    </>
+  );
 }
 
 export default App;
